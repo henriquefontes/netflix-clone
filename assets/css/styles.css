@@ -1,18 +1,39 @@
 * {
     box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background: rgb(24,24,24);
+    background: linear-gradient(0deg, rgba(24,24,24,1) 0%, rgba(20,20,20,1) 50%, rgba(11,11,11,1) 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    color: white;
 }
 
 .top-header {
     width: 100vw;
-    height: 70px;
-    padding: 0 70px;
+    height: 620px;
+    position: relative;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    background: rgb(24,24,24);
-    background: linear-gradient(0deg, rgba(24,24,24,1) 0%, rgba(20,20,20,1) 50%, rgba(11,11,11,1) 100%);
     font-family: 'Poppins', sans-serif;
     overflow: hidden;
+}
+
+.header-row {
+    z-index: 20;
+    width: 100vw;
+    padding: 15px 70px;
+    display: flex;
+    position: relative;
 }
 
 .header-left, .header-right {
@@ -73,4 +94,93 @@
 
 #logo {
     width: 100px;
+}
+
+.movie-banner {
+    z-index: 10;
+    position: absolute;
+    width: 100vw;
+    height: 550px;
+    display: flex;
+    flex-direction: row;
+    background-image: url('../images/bannerbg.webp');
+    background-size: cover;
+}
+
+.left-banner, .right-banner {
+    display: flex;
+    width: 50vw;
+}
+
+.left-banner {
+    padding-left: 50px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.right-banner {
+    position: relative;
+    justify-content: center;
+}
+
+.banner-info {
+    width: 80%;
+}
+
+.banner-img-title {
+    width: 450px;
+}
+
+.banner-img {
+    position: absolute;
+    top: 80px;
+    width: 300px;
+}
+
+.banner-desc{
+    color: white;
+    font-size: 17px;
+    text-shadow: 0 0 10px black;
+}
+
+.banner-btns {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    padding-top: 30px;
+}
+
+.banner-play-btn, .banner-about-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 14px;
+    padding: 20px;
+}
+
+.banner-play-btn {
+    width: 150px;
+    background-color: white;
+}
+
+.banner-play-btn i{
+    margin-right: 10px;
+}
+
+.banner-about-btn {
+    width: 200px;
+    margin-left: 10px;
+    background: rgba(70, 70, 70, 0.596);
+    color: white;
+}
+
+.banner-about-btn i{
+    margin-right: 10px;
+}
+
+.banner-play-btn, .banner-about-btn:hover {
+    cursor: pointer;
 }
