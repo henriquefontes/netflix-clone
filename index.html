@@ -13,14 +13,14 @@
     <title>Netflix</title>
 </head>
 <body>
-    <header class="top-header">
-        <div class="header-row">
-            <div class="header-left">
+    <header class="d-flex top-header">
+        <div class="d-flex header-row">
+            <div class="d-flex header-left">
                 <div class="netflix-logo">
                     <img id="logo" src="assets/images/netflix-logo.svg" alt="logo netflix">
                 </div>
                 <nav id="top-header-left-menu">
-                    <ul class="left-menu-list">
+                    <ul class="d-flex left-menu-list">
                         <li class="list-item"><a class="list-item-redirect" href="#">Início</a></li>
                         <li class="list-item"><a class="list-item-redirect" href="#">Séries</a></li>
                         <li class="list-item"><a class="list-item-redirect" href="#">Filmes</a></li>
@@ -29,9 +29,9 @@
                     </ul>
                 </nav>
             </div>
-            <div class="header-right">
+            <div class="jc-end header-right">
                 <nav id="top-header-right-menu">
-                    <ul class="right-menu-list">
+                    <ul class="d-flex jc-end right-menu-list">
                         <li class="list-item"><i id="search-btn" class="fas fa-search"></i></li>
                         <li class="list-item"><i id="bell-btn" class="fas fa-bell"></i></li>
                         <li class="list-item"><i id="user-btn" class="fas fa-user"></i></li>
@@ -39,28 +39,40 @@
                 </nav>
             </div>
         </div>
-        <div class="movie-banner">
-            <div class="left-banner">
+        <div class="d-flex movie-banner">
+            <div class="jc-center left-banner">
                 <div class="banner-info">
                     <img class="banner-img-title" src="assets/images/bannerlogo.webp">
                     <div class="banner-desc">
                         <p>O brilhante cientista beberrão Rick sequestra Morty, seu neto aborrescente, para viver loucuras em outros mundos e dimensões alternativas.</p>
                     </div>
-                    <div class="banner-btns">
-                        <button class="banner-play-btn">
+                    <div class="d-flex banner-btns">
+                        <button class="jc-center banner-play-btn">
                             <i class="fas fa-play"></i><strong>Assistir</strong>
                         </button>
-                        <button class="banner-about-btn">
+                        <button class="jc-center banner-about-btn">
                             <i class="fas fa-info-circle"></i><span>Mais informações</span>
                         </button>
                     </div>
                 </div>
             </div>
-            <div class="right-banner"></div>
+            <div class="jc-center right-banner"></div>
         </div>
     </header>
     <main>
-        
+        <article class="d-flex movies-categories">
+            <section class="d-flex cat-watch-again" >
+                <h2 style="margin-bottom: 10px;">Assistir novamente</h2>
+                <nav class="d-flex movies-row">
+                    <ul class="d-flex movies-list">
+                        <li><img src="assets/images/bigmouth.jpg" class="carousel-img"></li>
+                        <li><img src="assets/images/bigmouth.jpg" class="carousel-img"></li>
+                        <li><img src="assets/images/bigmouth.jpg" class="carousel-img"></li>
+                        <li><img src="assets/images/bigmouth.jpg" class="carousel-img"></li>
+                    </ul>
+                </nav>
+            </section>
+        </article>
     </main>
     <!-- SCRIPTS -->
 </body>
