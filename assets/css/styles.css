@@ -132,6 +132,8 @@ h1 {
     flex-direction: row;
     background-image: url('../images/bannerbg.webp');
     background-size: cover;
+    -webkit-box-shadow: inset 0px -30px 15px 0px #111111; 
+    box-shadow: inset 0px -30px 15px 0px #111111;
 }
 
 .left-banner, .right-banner {
